@@ -1,0 +1,237 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body{    
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+        
+.navbar-default {
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+    color: blue;
+}
+
+.navbar-nav > li,
+.navbar-brand {
+    padding: 30px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    right: 0;
+    height: 1px;
+    width: 50%;
+    background: blue;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: width .3s cubic-bezier(0.55,.085,.68,.53),opacity .2s cubic-bezier(0.55,.085,.68,.53);
+    transition: width .3s cubic-bezier(0.55,.085,.68,.53),opacity .2s cubic-bezier(0.55,.085,.68,.53);
+}
+
+.navbar-default .navbar-nav > li > a:hover:after,
+.navbar-default .navbar-nav > li > a:focus:after,
+.navbar-default .navbar-nav > li.active > a:after {
+    width: calc(100% + 5px);
+    opacity: 1;
+    transition: width .3s cubic-bezier(0.25,.46,.45,.94),opacity 0s linear;
+    transition: width .3s cubic-bezier(0.25,.46,.45,.94),opacity 0s linear;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: blue;
+    background-color: transparent;
+}
+
+.nav_scroll {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    z-index: 900;
+}
+
+.nav_scroll .navbar-nav > li,
+.nav_scroll .navbar-brand {
+    padding: 20px 10px;
+}
+
+.nav_scroll .navbar-brand {
+    color: #333;
+}
+
+.nav_scroll .navbar-brand:hover, 
+.nav_scroll .navbar-brand:focus {
+    color: #333;
+}
+
+.nav_scroll .navbar-nav > li > a,
+.nav_scroll .navbar-nav > li > a:hover, 
+.nav_scroll .navbar-nav > li > a:focus,
+.nav_scroll .navbar-nav > .active > a,
+.nav_scroll .navbar-nav > .active > a:hover,
+.nav_scroll .navbar-nav > .active > a:focus {
+    color: #333;
+}
+
+.nav_scroll .navbar-nav a:after {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.navbar-toggle {
+	margin-right: 70px;
+}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 2px;
+    width: 22px;
+    transition: all 0.2s;
+}
+
+.nav_scroll .navbar-toggle .icon-bar {
+    background-color: #111;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    opacity: 0;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.collapsed .icon-bar {
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+
+video#hero-video {
+	width: 100%;
+	height: auto;
+}
+
+.skew {
+	position: relative;
+}
+
+.skew .skew-image {
+	position: absolute;
+	width: 52%;
+	right: 0px;
+	top: 0;
+
+}
+
+.skew .skew-wrapper {
+	position: relative;
+	height: 400px;
+}
+
+
+.skew .skew-content-bg {
+	position: absolute;
+	height: 100%;
+	top: 0%;
+	left: -30px;
+	right: -20px;
+	background-color: aliceblue;
+	background-position: center left;
+
+	transform: skew(-8deg, 0deg);
+}
+
+.skew .skew-content {
+	position: relative;
+	top: 100px;
+	left: 10%;
+	font-size: 1rem;
+	color: black;
+	padding: 30px 30px;
+}
+
+.skew .skew-content h1 {
+	padding-bottom: 20px;
+}
+
+.skew .skew-content p {
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+.btn {
+	border: 2px solid black;
+	border-radius: 0px;
+	background-color: none;
+	color: black;
+	padding: 10px 22px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn-white {
+	border-color: black;
+	color: black;
+}
+
+.btn-white:hover {
+	background-color: white;
+	color: black;
+}
+
+
+@media screen and (max-width: 968px) {
+
+	.navbar-default {
+		background-color: darkslateblue;
+	}
+	.navbar-default .navbar-brand {
+		display: flex;
+		align-items: center;
+	}
+
+}
