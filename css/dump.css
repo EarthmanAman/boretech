@@ -1,0 +1,245 @@
+.skew {
+	position: relative;
+
+}
+
+.skew .skew-image {
+	position: absolute;
+	width: 52%;
+	height: 500px;
+	right: 0px;
+	top: 0;
+	overflow: hidden;
+
+}
+
+
+
+.skew .skew-wrapper {
+	position: relative;
+	height: 500px;
+	width: 55%;
+	left: -3%;
+}
+
+
+.skew .skew-content-bg {
+	position: absolute;
+	height: 100%;
+	top: 0%;
+	left: 5px;
+	right: -20px;
+	background-color: #8DC4F5;
+	background-position: center left;
+
+	transform: skew(-8deg, 0deg);
+}
+
+.skew .skew-content {
+	position: absolute;
+	top: 100px;
+	left: 10%;
+	font-size: 1rem;
+	color: black;
+	padding: 30px 30px;
+}
+
+.skew .skew-content h1 {
+	padding-bottom: 20px;
+}
+
+.skew .skew-content p {
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+.btn {
+	border: 2px solid black;
+	border-radius: 0px;
+	background-color: none;
+	color: black;
+	padding: 10px 22px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn-white {
+	border-color: black;
+	color: black;
+}
+
+.btn-white:hover {
+	background-color: white;
+	color: black;
+}
+
+
+
+.section {
+	margin-top: 40px;
+	padding: 20px;
+}
+
+
+.quote-section {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	background: blue;
+	opacity: 0.7;
+}
+
+.quote-text {
+	
+	width: 70%;
+
+}
+
+.quote-text h5 {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.quote {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: -30px;
+	width: 51.8%;
+	height: 70px;
+	text-align: center;
+	background: orange;
+	transform: skew(-8deg, 0deg);
+}
+
+.quote a {
+	font-size: 22px;
+	color: white;
+}
+
+.quote a:after {
+	content: ">>";
+	margin-left: 10px;
+}
+
+.quote a:hover {
+
+}
+
+
+.services .item .image {
+	width: 100%;
+}
+
+.services .item {
+	padding: 10px;
+}
+
+.services .item .content h3 {
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+
+.services .item .content p {
+	font-size: 18px;
+	line-height: 35px;
+}
+.services .item .image img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.landing-text {
+	position: relative;
+	width: 80%;
+	left: 10%;
+	right: 10%;
+
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.landing-text p {
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 40px;
+}
+
+.about-section {
+	background: url(../images/back10.jpg);
+	background-repeat: no-repeat;
+	background-size: 55%;
+	background-color: #f4f4f4;
+	overflow:hidden;
+	padding: 100px 0;
+}
+
+.inner-container {
+	width: 55%;
+	float: right;
+	background: #fdfdfd;
+	padding: 100px;
+}
+
+
+
+@media screen and (max-width: 968px) {
+
+	.skew {
+		display: flex;
+		flex-direction: column;
+	}
+	.skew .skew-image {
+
+		position: relative;
+		order: 2;
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	video#hero-video {
+		width: 100%;
+		height: auto;
+	}
+
+	.skew .skew-wrapper {
+		width: 100%;
+		left: 0;
+		height: 350px;
+	}
+	.skew .skew-content-bg {
+		width: 100%;
+		left: 0px;
+		transform: skew(0deg, 0deg);
+	}
+
+	.skew .skew-content {
+		top: 50px;
+		left: 5%;
+		padding-bottom: 10px;
+	}
+
+	.skew .skew-content h1 {
+		padding-bottom: 10px;
+	}
+
+	.skew .skew-content p {
+		font-size: 16px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 568px) {
+	.skew .skew-content {
+		left: 1%;
+	}
+}

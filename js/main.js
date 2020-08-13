@@ -18,9 +18,8 @@ $(document).ready(function(){
 
 	$(".bxslider").bxSlider({
 			auto:true,
-			video:true,
 			autoHover:true,
-			pause: 4000,
+			pause: 7000,
 			mode: "horizontal",
 			moveSlides: 1,
 			slideMargin: 40,
