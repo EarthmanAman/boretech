@@ -17,6 +17,7 @@ $(document).ready(function(){
 	});
 
 	$(".bxslider").bxSlider({
+			video: true,
 			auto:true,
 			autoHover:true,
 			pause: 7000,
