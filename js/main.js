@@ -20,7 +20,7 @@ $(document).ready(function(){
 			video: true,
 			auto:true,
 			autoHover:true,
-			pause: 7000,
+			pause: 9000,
 			mode: "horizontal",
 			moveSlides: 1,
 			slideMargin: 40,

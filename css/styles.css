@@ -295,7 +295,7 @@ body{
 }
 
 .sub-heading p {
-	color: #818181;
+	color: dimgrey;
 	display: inline-block;
 	padding:0px 0px 20px;
 	position: relative;
@@ -399,12 +399,13 @@ body{
 	font-size: 20px;
 	letter-spacing: 1.5px;
 	line-height: 40px;
+	color: dimgrey
 }
 
 
 
 .features-area {
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/splash.jpg) ;
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/splash.jpg) ;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -417,11 +418,13 @@ body{
 	font-size: 24px;
 	font-weight: 700;
 	margin-bottom: 13px;
+	color: lavender;
 }
 
 .features-text p {
 	margin-bottom: 0;
 	line-height: 28px;
+	color: lightgrey
 }
 
 
@@ -439,7 +442,7 @@ body{
 }
 
 .first {
-	flex:1;
+	flex:1.5;
 	padding:40px 30px;
 }
 
@@ -451,8 +454,8 @@ body{
 
 .second {
 	flex:1;
-	padding: 0px 30px;
-	text-align: center;
+	padding-left: 120px;
+	
 }
 
 .second ul {
@@ -467,7 +470,7 @@ body{
 
 .second ul li:before {
 	content: "+";
-	margin-right: 10px;
+	margin-right: 20px;
 	font-size: 22px;
 	color: blue;
 	font-weight: bold;
@@ -765,16 +768,15 @@ body{
 
 
 	.videos-slider {
-		height: 280px;
+		height: 200px;
+		box-shadow: 5px 15px rgba(0,0,0,0.1);
 	}
 
-	.videos-slider img {
-		height: 280px;
+	.videos-slider video {
+		width: 100%;
 	}
 	
-	.bx-viewport {
-		height: 280px !important;
-	}
+	
 	
 
 	.bx-wrapper .bx-pager {
@@ -823,7 +825,10 @@ body{
 		padding: 0 10px;
 	}
 
-	
+	.second {
+		padding-left: 0px;
+		text-align: center;
+	}
 	.features-area {
 		text-align: center;
 		color: white;
