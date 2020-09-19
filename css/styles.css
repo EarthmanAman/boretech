@@ -749,6 +749,7 @@ body{
 	.navbar-default {
 		position: relative;
 		background-color: #00a7dd;
+		background-image: none;
 	}
 
 	.navbar-default .navbar-brand {
